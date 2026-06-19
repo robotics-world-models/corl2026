@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robotics World Models: Grounding, Evaluation, and Control</title>
+    <meta
+      name="description"
+      content="CoRL 2026 workshop on grounding, evaluation, and control for robotics world models."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Robotics World Models home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Robotics World Models</span>
+      </a>
+      <nav aria-label="Workshop navigation">
+        <a href="#program">Program</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#submissions">Submissions</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-copy">
+          <p class="eyebrow">CoRL 2026 half-day in-person workshop</p>
+          <h1 id="title">Robotics World Models: Grounding, Evaluation, and Control</h1>
+          <p class="lede">
+            A working session on what robotics world models should represent,
+            how they should be evaluated, and how they can be used safely inside
+            robot learning and control loops.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#submissions">Submission dates</a>
+            <a class="button secondary" href="mailto:shaohuas@ntu.edu.tw">Contact organizers</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" aria-labelledby="questions-title">
+        <div class="section-kicker">Research Questions</div>
+        <h2 id="questions-title">Core challenges</h2>
+        <div class="question-grid">
+          <article>
+            <h3>Representation and grounding</h3>
+            <p>
+              Should models predict pixels, states, action-conditioned futures,
+              latent dynamics, task progress, contact events, or a hybrid? How
+              should actions, proprioception, force, language goals, and task
+              context be grounded across embodiments?
+            </p>
+          </article>
+          <article>
+            <h3>Planning and control interfaces</h3>
+            <p>
+              How can world models support short-horizon correction and
+              long-horizon task progress without unstable autoregressive error?
+              When should a model signal completion, recovery, or uncertainty
+              high enough to stop planning?
+            </p>
+          </article>
+          <article>
+            <h3>Evaluation beyond video quality</h3>
+            <p>
+              What demonstrates control utility rather than visual plausibility?
+              Candidate criteria include task success under model-predictive
+              control, 3D and physical consistency, contact prediction,
+              model-policy feedback loops, and human judgments of task progress.
+            </p>
+          </article>
+          <article>
+            <h3>Community infrastructure</h3>
+            <p>
+              Which datasets, benchmarks, simulation rollouts, policy-in-the-loop
+              protocols, and reporting standards will let the community compare
+              robotics world models across manipulation, dexterous control,
+              manufacturing, and other high-precision settings?
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="program" aria-labelledby="program-title">
+        <div class="section-kicker">Program</div>
+        <div class="section-head">
+          <h2 id="program-title">Schedule</h2>
+          <p>
+            The program combines research talks, contributed spotlights, posters,
+            and a short non-research spotlights and demos session.
+          </p>
+        </div>
+        <ol class="schedule">
+          <li><time>2:00-2:05 PM</time><span>Opening remarks</span></li>
+          <li><time>2:05-2:35 PM</time><span>Invited Talk 1</span></li>
+          <li><time>2:35-3:05 PM</time><span>Invited Talk 2</span></li>
+          <li><time>3:05-3:30 PM</time><span>Non-research spotlights and demos</span></li>
+          <li><time>3:30-4:00 PM</time><span>Coffee break</span></li>
+          <li><time>4:00-4:30 PM</time><span>Invited Talk 3</span></li>
+          <li><time>4:30-5:00 PM</time><span>Invited Talk 4</span></li>
+          <li><time>5:00-5:30 PM</time><span>Spotlights</span></li>
+          <li><time>5:30-5:55 PM</time><span>Poster session</span></li>
+          <li><time>5:55-6:00 PM</time><span>Closing remarks</span></li>
+        </ol>
+      </section>
+
+      <section class="section band" id="speakers" aria-labelledby="speakers-title">
+        <div class="section-kicker">Invited Speakers</div>
+        <div class="section-head">
+          <h2 id="speakers-title">Speakers</h2>
+        </div>
+        <div class="speaker-grid">
+          <article class="person-card speaker-card">
+            <img src="assets/people/karen-liu.jpg" alt="Karen Liu">
+            <div>
+              <a href="https://profiles.stanford.edu/c-karen-liu">Karen Liu</a>
+              <p>Stanford University / Amazon Frontier AI and Robotics</p>
+              <span>Tentatively confirmed</span>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <img src="assets/people/elliott-wu.jpg" alt="Elliott Shangzhe Wu">
+            <div>
+              <a href="https://www.elliottwu.com/">Elliott Shangzhe Wu</a>
+              <p>University of Cambridge</p>
+              <span>Confirmed</span>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <img src="assets/people/max-li.jpg" alt="Max Zhaoshuo Li">
+            <div>
+              <a href="https://mli0603.github.io/">Max Zhaoshuo Li</a>
+              <p>NVIDIA</p>
+              <span>Confirmed</span>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <img src="assets/people/mike-shou.jpg" alt="Mike Zheng Shou">
+            <div>
+              <a href="https://sites.google.com/view/showlab">Mike Zheng Shou</a>
+              <p>National University of Singapore</p>
+              <span>Confirmed</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="submissions" aria-labelledby="submissions-title">
+        <div class="section-kicker">Submissions</div>
+        <div class="split">
+          <div>
+            <h2 id="submissions-title">Submission and reviewing process</h2>
+            <p>
+              We will invite full workshop papers of up to 8 pages and short
+              submissions of 2-4 pages. Short submissions may focus on
+              proof-of-concept results, benchmark proposals, system descriptions,
+              demos, datasets, code, blog posts, negative results, or position
+              papers.
+            </p>
+            <p>
+              Submissions will use the CoRL workshop format and will be managed
+              through OpenReview with a double-blind review process.
+            </p>
+          </div>
+          <div class="date-list" aria-label="Key dates">
+            <div>
+              <span>Submission deadline</span>
+              <strong>September 18, 2026</strong>
+            </div>
+            <div>
+              <span>Author notification</span>
+              <strong>October 9, 2026</strong>
+            </div>
+            <div>
+              <span>Camera-ready deadline</span>
+              <strong>October 30, 2026</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="organizers" aria-labelledby="organizers-title">
+        <div class="section-kicker">Organizers</div>
+        <div class="section-head">
+          <h2 id="organizers-title">Organizing committee</h2>
+        </div>
+        <div class="organizer-grid">
+          <article class="person-card organizer-card">
+            <img src="assets/people/shao-hua-sun.jpg" alt="Shao-Hua Sun">
+            <a href="https://shaohua0116.github.io/">Shao-Hua Sun</a>
+            <span>National Taiwan University</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/kuang-huei-lee.jpg" alt="Kuang-Huei Lee">
+            <a href="https://kuanghuei.github.io/">Kuang-Huei Lee</a>
+            <span>Google DeepMind</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/homanga-bharadhwaj.jpg" alt="Homanga Bharadhwaj">
+            <a href="https://homangab.github.io/">Homanga Bharadhwaj</a>
+            <span>Johns Hopkins University</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/zeyi-liu.jpg" alt="Zeyi Liu">
+            <a href="https://lzylucy.github.io/">Zeyi Liu</a>
+            <span>Stanford University</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/catherine-weaver.jpg" alt="Catherine Weaver">
+            <a href="https://cwj22.github.io/">Catherine Weaver</a>
+            <span>Scale AI</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/ruoshi-liu.jpg" alt="Ruoshi Liu">
+            <a href="https://ruoshiliu.github.io/">Ruoshi Liu</a>
+            <span>Amazon FAR / University of Maryland</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/sean-kirmani.jpg" alt="Sean Kirmani">
+            <a href="https://kirmani.ai/">Sean Kirmani</a>
+            <span>OpenAI</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/yu-wei-chao.jpg" alt="Yu-Wei Chao">
+            <a href="https://research.nvidia.com/person/yu-wei-chao">Yu-Wei Chao</a>
+            <span>NVIDIA</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/pepijn-kooijmans.jpg" alt="Pepijn Kooijmans">
+            <a href="https://huggingface.co/pepijn223">Pepijn Kooijmans</a>
+            <span>Hugging Face, LeRobot</span>
+          </article>
+          <article class="person-card organizer-card">
+            <img src="assets/people/jiajun-wu.jpg" alt="Jiajun Wu">
+            <a href="https://jiajunwu.com/">Jiajun Wu</a>
+            <span>Stanford University</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Contacts:
+        <a href="mailto:shaohuas@ntu.edu.tw">Shao-Hua Sun</a>
+        and
+        <a href="mailto:leekh@google.com">Kuang-Huei Lee</a>.
+      </p>
+      <p>Robotics World Models at CoRL 2026.</p>
+    </footer>
+  </body>
+</html>
